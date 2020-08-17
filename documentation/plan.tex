@@ -1,0 +1,30 @@
+\documentclass{article}
+    \usepackage[utf8]{inputenc}
+    \usepackage{tikz}
+    \setlength{\parindent}{0cm}
+
+\begin{document}
+    \Huge\textsc{Plan för} \texttt{G-A-R-I-O} \normalsize\\
+
+    \section{Aktörer}
+    I spelet gario: ta så mycket pengar från andra spelare som möjligt så att de går i konkurs och du får monopol på marknaden. 
+    \section{Mekanik}
+    \subsection{Spelplanen}
+    Spelplanen i \texttt{G-A-R-I-O} är en rektangel. I tidiga verisioner av spelet ska hela rektangeln vara synlig för alla spelare, på vilken de har möjlighet att förflytta sig. I senare ver. kanske detta ändras på ett sådant sätt att enbart ett begränsat segment av spelplanen är synlig. \\
+
+    Det finns två sorters ytor på spelplanen: de man kan gå på och väggar. 
+    \subsection{Aktioner}
+    Varje spelare har möjlighet att utföra fyra handlingar. Dessa innebär en av följande rörelser \{upp, ned, vänster, höger\}. I det fallet att en handling orsakar kollision med en vägg kommer handlingen inte leda till någon rörelse av spelaren. 
+    \subsection{Tillkomst av pengar-tokens}
+    Pengar tillkommer slumpmässigt på spelplanen. Dessa kan enbart tillkomma på ytor som är öppna för spelaren. De tillkommer i slumpmässigt antal mellan 1 och 5 st. 
+    \subsection{Kamp}
+    När två spelare möts ska det ske en kamp som avgörs slumpmässigt. Kampen gynnar i varje fall den spelare som har mest pengar. Vid varje kamp kommer pengar överföras till någon av spelarna.
+    \section{Implementation av ML}
+    ---
+    \section{Teknisk implementation}
+    \begin{enumerate}
+        \item All logik i backend
+        \item Simpel klient; single point of truth
+        \item Streaming av en lista över agentdata(både spelare och botar) via websocket till klient och event från klient server.z
+    \end{enumerate}
+    \end{document}
